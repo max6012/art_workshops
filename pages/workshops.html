@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshops - Max Kovalsky Art</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .workshop-section {
+      padding: 40px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .workshop-section:last-of-type {
+      border-bottom: none;
+    }
+    .workshop-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    .workshop-header .price {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #222;
+    }
+    .studio-img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      object-position: center 25%;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+    .instructor-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin: 25px 0;
+    }
+    .instructor-gallery img {
+      width: 100%;
+      height: 320px;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 4px;
+      transition: transform 0.3s ease;
+    }
+    .instructor-gallery img:hover {
+      transform: scale(1.02);
+    }
+    .book-btn-container {
+      text-align: center;
+      margin: 30px 0;
+      padding: 30px;
+      background: #f9f9f9;
+      border-radius: 6px;
+    }
+    .book-btn-container p {
+      margin-bottom: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">Max Kovalsky</a>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="workshops.html" class="active">Workshops</a></li>
+        <li><a href="lectures.html">Lectures</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container-narrow">
+      <h1>Workshops</h1>
+      <p class="subtitle">Hands-on instruction in drawing and painting</p>
+
+      <!-- Portrait Workshop -->
+      <section id="portrait" class="workshop-section">
+        <div class="workshop-header">
+          <div>
+            <h2 style="margin-top: 0; border: none;">Portrait Drawing & Painting Workshop</h2>
+            <p class="subtitle" style="margin-bottom: 0;">February 15 & 22, 2026</p>
+          </div>
+          <span class="price">$200</span>
+        </div>
+
+        <img src="../images/portrait/studio.jpeg" alt="Workshop studio" class="studio-img">
+
+        <p>We are looking forward to drawing and painting with you in our upcoming two-day portrait workshop! We'll explore how to see the face as shapes rather than features, how to capture likeness through proportion and value, and how to translate those foundations into a painted portrait.</p>
+
+        <p>Our focus will be on learning, not perfection - think of your drawings and paintings as experiments, not masterpieces.</p>
+
+        <p>We'll start each day with demos and exercises to loosen up, then move into longer sessions where you'll apply what you've learned. By the end, you'll have a better understanding of how to see, measure, and render the human face like an artist.</p>
+
+        <h3>Instructor's Works</h3>
+        <div class="instructor-gallery">
+          <img src="../images/portrait/portrait1.jpeg" alt="Portrait example 1">
+          <img src="../images/portrait/portrait2.jpeg" alt="Portrait example 2">
+          <img src="../images/portrait/portrait3.jpeg" alt="Portrait example 3">
+          <img src="../images/portrait/portrait4.jpeg" alt="Portrait example 4">
+        </div>
+
+        <h3>Workshop Schedule</h3>
+
+        <div class="schedule">
+          <h3>Day 1: Foundations in Pencil & Charcoal - Sunday, February 15</h3>
+
+          <div class="time-block">
+            <span class="time">9:00 - 9:30</span>
+            <span class="activity-title">Welcome & Setup</span>
+            <p class="activity-desc">Intro to materials, safety, and workshop philosophy: process over product, "disposable drawings," experimentation.</p>
+          </div>
+
+          <div class="time-block">
+            <span class="time">9:30 - 9:45</span>
+            <span class="activity-title">Seeing Shapes, Not Features</span>
+            <p class="activity-desc">Quick discussion of why our brains lie to us about faces - how we see "eyes" and "noses" instead of shapes, angles, and values.</p>
+          </div>
+
+          <div class="time-block">
+            <span class="time">9:45 - 10:30</span>
+            <span class="activity-title">Pencil Warm-Ups</span>
+            <p class="activity-desc">Gesture drawings of the head - 2-minute sketches focusing on overall shape and tilt, not features. We're training our eyes, not making keepers.</p>
+          </div>
+
+          <div class="time-block">
+            <span class="time">10:30 - 11:00</span>
+            <span class="activity-title">Demo: Proportion & Measurement</span>
+            <p class="activity-desc">Instructor demo covering comparative measurement, the classic proportion guidelines (and when to ignore them), mapping big shapes.</p>
+          </div>
+
+          <div class="time-block">
+            <span class="time">11:00 - 12:00</span>
+            <span class="activity-title">Pencil Studies</span>
+            <p class="activity-desc">Students complete 3-4 pencil studies (10-15 minutes each) focusing on head shape, placement of features as shapes, and proportion.</p>
+          </div>
+
+          <div class="time-block">
+            <span class="time">12:00 - 12:45</span>
+            <span class="activity-title">Lunch</span>
+          </div>
+
+          <div class="time-block">
+            <span class="time">12:45 - 1:15</span>
+            <span class="activity-title">Introduction to Charcoal</span>
+            <p class="activity-desc">Demo of vine vs. compressed charcoal, subtractive drawing, building value.</p>
+          </div>
+
+          <div class="time-block">
+            <span class="time">1:15 - 2:30</span>
+            <span class="activity-title">Charcoal Studies</span>
+            <p class="activity-desc">Students complete 2-3 charcoal studies (15-20 minutes each) focusing on big value shapes and shadow patterns, resisting the urge to draw features too soon.</p>
+          </div>
+
+          <div class="time-block">
+            <span class="time">2:30 - 3:00</span>
+            <span class="activity-title">Group Review & Discussion</span>
+            <p class="activity-desc">Discussion of what worked: shape accuracy vs. feature rendering, value grouping, we're learning to see the abstraction underneath the face.</p>
+          </div>
+        </div>
+
+        <div class="schedule">
+          <h3>Day 2: From Charcoal to Color - Sunday, February 22</h3>
+
+          <div class="time-block">
+            <span class="time">9:00 - 9:30</span>
+            <span class="activity-title">Warm-Up: Quick Charcoal Study</span>
+            <p class="activity-desc">One charcoal portrait to loosen up and reinforce yesterday's lessons. Focus on value structure - this becomes your roadmap for painting.</p>
+          </div>
+
+          <div class="time-block">
+            <span class="time">9:30 - 9:45</span>
+            <span class="activity-title">From Drawing to Painting</span>
+            <p class="activity-desc">Brief discussion of how drawing skills translate to paint: value structure first, color second.</p>
+          </div>
+
+          <div class="time-block">
+            <span class="time">9:45 - 10:00</span>
+            <span class="activity-title">Demo: Monochromatic Block-In</span>
+            <p class="activity-desc">Instructor demo of blocking in values with a single color - establishing the structure before introducing full color.</p>
+          </div>
+
+          <div class="time-block">
+            <span class="time">10:00 - 11:00</span>
+            <span class="activity-title">Monochromatic Block-In Studies</span>
+            <p class="activity-desc">Students complete 1-2 value block-in studies, focusing on getting the drawing right in paint.</p>
+          </div>
+
+          <div class="time-block">
+            <span class="time">11:00 - 11:15</span>
+            <span class="activity-title">Demo: Adding Color</span>
+            <p class="activity-desc">Instructor demo of transitioning from value block-in to color - mixing flesh tones, maintaining value relationships.</p>
+          </div>
+
+          <div class="time-block">
+            <span class="time">11:15 - 12:00</span>
+            <span class="activity-title">Color Studies</span>
+            <p class="activity-desc">Students add color to their block-ins or start fresh, focusing on matching values while introducing warm/cool temperature shifts.</p>
+          </div>
+
+          <div class="time-block">
+            <span class="time">12:00 - 12:45</span>
+            <span class="activity-title">Lunch</span>
+          </div>
+
+          <div class="time-block">
+            <span class="time">12:45 - 2:30</span>
+            <span class="activity-title">The "Good Enough" Portrait</span>
+            <p class="activity-desc">Students develop one portrait painting from value block-in through color to "good enough," emphasizing not overworking it - knowing when to stop.</p>
+          </div>
+
+          <div class="time-block">
+            <span class="time">2:30 - 3:00</span>
+            <span class="activity-title">Group Reflection</span>
+            <p class="activity-desc">Group discussion and reflection on the weekend's progression from shapes to values to color.</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <h3>Materials Provided</h3>
+          <p>Newsprint, drawing paper, graphite pencils, vine and compressed charcoal, kneaded erasers, canvas paper, limited palette oils, brushes, solvent, rags.</p>
+        </div>
+
+        <div class="info-box">
+          <h3>What to Bring</h3>
+          <ul>
+            <li>Your own lunch and plenty of water</li>
+            <li>An apron or clothes you don't mind getting dirty</li>
+            <li>A roll of paper towels</li>
+          </ul>
+        </div>
+
+        <div class="book-btn-container">
+          <p>Spaces are limited. Reserve your spot today.</p>
+          <!-- Calendly/Stripe embed will go here -->
+          <a href="#" class="btn btn-primary">Book Now - $200</a>
+        </div>
+      </section>
+
+      <!-- Seascape Workshop -->
+      <section id="seascape" class="workshop-section">
+        <div class="workshop-header">
+          <div>
+            <h2 style="margin-top: 0; border: none;">Seascape Painting Workshop</h2>
+            <p class="subtitle" style="margin-bottom: 0;">Saturday, March 7, 2026</p>
+          </div>
+          <span class="price">$75</span>
+        </div>
+
+        <img src="../images/seascape/studio.jpeg" alt="Workshop studio" class="studio-img">
+
+        <p>We are looking forward to painting with you in this one-day seascape workshop! We'll explore how master painters have captured the sea across centuries, then apply those techniques to bring out the vibrancy of St. Thomas seascapes in your own paintings.</p>
+
+        <p>Our focus will be on learning, not perfection - think of your paintings as experiments, not masterpieces.</p>
+
+        <p>We'll start by looking at how the greats handled water, light, and atmosphere, move into quick studies from provided references, then spend the afternoon developing a painting from your own reference photo.</p>
+
+        <p>All materials will be provided, but feel free to bring your favorite brushes and paints. All levels are welcome.</p>
+
+        <h3>Instructor's Works</h3>
+        <div class="instructor-gallery">
+          <img src="../images/seascape/seasccape1.jpeg" alt="Seascape example 1">
+          <img src="../images/seascape/seascape2.jpeg" alt="Seascape example 2">
+          <img src="../images/seascape/seascape3.jpeg" alt="Seascape example 3">
+          <img src="../images/seascape/seascape4.jpeg" alt="Seascape example 4">
+        </div>
+
+        <h3>Workshop Schedule</h3>
+
+        <div class="schedule">
+          <h3>Saturday, March 7</h3>
+
+          <div class="time-block">
+            <span class="time">9:00 - 9:30</span>
+            <span class="activity-title">Welcome & Setup</span>
+            <p class="activity-desc">Intro to materials, safety, and workshop philosophy: process over product, experimentation over perfection.</p>
+          </div>
+
+          <div class="time-block">
+            <span class="time">9:30 - 10:15</span>
+            <span class="activity-title">Learning from the Masters</span>
+            <p class="activity-desc">We'll look at seascapes from the Baroque through contemporary painters - how they handled water movement, light on waves, atmospheric perspective, and the challenge of making blue interesting.</p>
+          </div>
+
+          <div class="time-block">
+            <span class="time">10:15 - 12:00</span>
+            <span class="activity-title">Quick Studies from Reference</span>
+            <p class="activity-desc">Students complete several color sketches (20-30 minutes each) from provided reference images, focusing on value structure, color temperature shifts in water, and not overworking the waves.</p>
+          </div>
+
+          <div class="time-block">
+            <span class="time">12:00 - 12:45</span>
+            <span class="activity-title">Lunch</span>
+          </div>
+
+          <div class="time-block">
+            <span class="time">12:45 - 1:00</span>
+            <span class="activity-title">Choosing & Simplifying Your Reference</span>
+            <p class="activity-desc">Brief discussion of what makes a good seascape reference - clear light, simple composition, interesting shapes. How to crop and simplify.</p>
+          </div>
+
+          <div class="time-block">
+            <span class="time">1:00 - 2:30</span>
+            <span class="activity-title">Your Seascape</span>
+            <p class="activity-desc">Students develop a painting from their own reference photo, applying the morning's lessons. Instructor circulates for individual guidance.</p>
+          </div>
+
+          <div class="time-block">
+            <span class="time">2:30 - 3:00</span>
+            <span class="activity-title">Group Reflection</span>
+            <p class="activity-desc">Group discussion of the day's work - what techniques clicked, what you'll take into your next seascape.</p>
+          </div>
+        </div>
+
+        <div class="info-box info-box-blue">
+          <h3>What to Bring</h3>
+          <ul>
+            <li>Your own lunch and plenty of water</li>
+            <li>An apron or clothes you don't mind getting paint on</li>
+            <li>A roll of paper towels</li>
+            <li>A seascape reference photo - ideally a printed image with clear light and simple composition, but you can also use one on your iPhone or iPad</li>
+          </ul>
+          <p style="margin-top: 15px; font-style: italic; color: #666;">All materials will be provided, but feel free to bring your favorite brushes and paints.</p>
+        </div>
+
+        <div class="book-btn-container">
+          <p>Spaces are limited. Reserve your spot today.</p>
+          <!-- Calendly/Stripe embed will go here -->
+          <a href="#" class="btn btn-primary">Book Now - $75</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Max Kovalsky. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="contact.html">Contact</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

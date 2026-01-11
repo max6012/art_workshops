@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Max Kovalsky Art</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      margin: 30px 0;
+    }
+    .contact-info h3 {
+      margin-top: 30px;
+    }
+    .contact-info h3:first-child {
+      margin-top: 0;
+    }
+    .contact-info p {
+      color: #666;
+    }
+    .contact-info a {
+      color: #333;
+      border-bottom: 1px solid #ddd;
+      transition: border-color 0.3s ease;
+    }
+    .contact-info a:hover {
+      border-color: #e8a87c;
+    }
+    .social-links {
+      display: flex;
+      gap: 20px;
+      margin-top: 15px;
+    }
+    .social-links a {
+      border: none;
+    }
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">Max Kovalsky</a>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="lectures.html">Lectures</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container-narrow">
+      <h1>Contact</h1>
+      <p class="subtitle">Questions, commissions, or just want to say hello?</p>
+
+      <div class="contact-grid">
+        <div class="contact-form-container">
+          <!-- Formspree form - replace YOUR_FORM_ID with actual Formspree endpoint -->
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form" style="margin: 0;">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 4px; font-family: 'Open Sans', sans-serif; font-size: 1rem; font-weight: 300; background: #fff;">
+                <option value="general">General Inquiry</option>
+                <option value="workshop">Workshop Question</option>
+                <option value="lecture">Lecture Booking</option>
+                <option value="commission">Commission Request</option>
+                <option value="purchase">Purchase Inquiry</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <h3>Location</h3>
+          <p>St. Thomas, U.S. Virgin Islands</p>
+          <p>Studio visits by appointment</p>
+
+          <h3>Email</h3>
+          <p><a href="mailto:your@email.com">your@email.com</a></p>
+
+          <h3>Response Time</h3>
+          <p>I typically respond to emails within 24-48 hours. For urgent workshop inquiries close to event dates, please mention that in your subject line.</p>
+
+          <h3>Follow Along</h3>
+          <div class="social-links">
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">Facebook</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-box" style="margin-top: 50px;">
+        <h3>Commission Inquiries</h3>
+        <p>Interested in a custom portrait or seascape? Please include the following in your message:</p>
+        <ul style="margin-left: 20px;">
+          <li>Type of work (portrait, seascape, etc.)</li>
+          <li>Approximate size you're considering</li>
+          <li>Timeline if relevant</li>
+          <li>Reference photos or inspiration (if applicable)</li>
+        </ul>
+        <p style="margin-bottom: 0; margin-top: 15px;">I'll respond with availability, pricing, and next steps.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Max Kovalsky. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="contact.html">Contact</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

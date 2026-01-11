@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Max Kovalsky Art</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 40px;
+      margin: 30px 0;
+      align-items: start;
+    }
+    .about-image img {
+      width: 100%;
+      border-radius: 4px;
+    }
+    .about-text p {
+      margin-bottom: 20px;
+    }
+    .teaching-philosophy {
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 6px;
+      margin: 40px 0;
+    }
+    .teaching-philosophy h3 {
+      margin-top: 0;
+    }
+    @media (max-width: 768px) {
+      .about-content {
+        grid-template-columns: 1fr;
+      }
+      .about-image {
+        max-width: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">Max Kovalsky</a>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="lectures.html">Lectures</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container-narrow">
+      <h1>About</h1>
+
+      <div class="about-content">
+        <div class="about-image">
+          <img src="../images/portrait/studio.jpeg" alt="Max Kovalsky in the studio">
+        </div>
+        <div class="about-text">
+          <p>I'm Max Kovalsky, a painter and instructor based in St. Thomas, U.S. Virgin Islands. My work focuses on portraits and the seascapes that surround my island home.</p>
+
+          <p>I believe that learning to see - really see - is the foundation of all good art. Whether I'm working on a commissioned portrait or capturing the light on Caribbean waves, my process always begins with careful observation: finding the shapes, values, and color relationships that make a subject come alive.</p>
+
+          <p>This same approach guides my teaching. In my workshops, I help students move past the symbols their brains want to draw and into the world of direct observation. We focus on process over product, experimentation over perfection, and the joy of learning something new with each painting.</p>
+
+          <p>When I'm not painting or teaching, you'll find me exploring the beaches and coastlines of St. Thomas, always looking for the next seascape that catches my eye.</p>
+        </div>
+      </div>
+
+      <div class="teaching-philosophy">
+        <h3>Teaching Philosophy</h3>
+        <p>I approach teaching the way I approach my own practice: with patience, curiosity, and a willingness to make mistakes. Every painting is an experiment, every session an opportunity to learn something new.</p>
+        <p>My workshops aren't about producing masterpieces - they're about building skills and confidence. I want my students to leave with a better understanding of how to see, measure, and render their subjects, whether they're working on a portrait, a seascape, or anything else that captures their interest.</p>
+        <p style="margin-bottom: 0;">Most importantly, I want my students to enjoy the process. Art should be challenging, yes - but it should also be deeply rewarding.</p>
+      </div>
+
+      <h2>Background</h2>
+      <p>Add your background, training, and experience here. This might include:</p>
+      <ul style="margin-left: 20px; margin-bottom: 20px;">
+        <li>Formal art education and training</li>
+        <li>Notable teachers or mentors</li>
+        <li>Exhibitions and shows</li>
+        <li>Awards and recognition</li>
+        <li>Collections where your work appears</li>
+      </ul>
+
+      <div style="text-align: center; margin: 40px 0;">
+        <a href="contact.html" class="btn">Get in Touch</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Max Kovalsky. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="contact.html">Contact</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

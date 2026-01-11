@@ -1,11 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Max Kovalsky Art Workshops</title>
-  <meta http-equiv="refresh" content="0; url=html/portrait-workshop.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Max Kovalsky Art</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <p>Redirecting to workshops...</p>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Max Kovalsky</a>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="pages/portfolio.html">Portfolio</a></li>
+        <li><a href="pages/workshops.html">Workshops</a></li>
+        <li><a href="pages/lectures.html">Lectures</a></li>
+        <li><a href="pages/shop.html">Shop</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" style="background-image: url('images/portrait/studio.jpeg');">
+      <div class="hero-content">
+        <h1>Max Kovalsky</h1>
+        <p class="subtitle">Artist & Instructor - St. Thomas, USVI</p>
+        <a href="pages/workshops.html" class="btn">View Workshops</a>
+      </div>
+    </section>
+
+    <div class="container">
+      <h2>Recent Work</h2>
+      <div class="gallery-grid">
+        <img src="images/portrait/portrait1.jpeg" alt="Portrait work">
+        <img src="images/portrait/portrait2.jpeg" alt="Portrait work">
+        <img src="images/seascape/seascape2.jpeg" alt="Seascape work">
+        <img src="images/seascape/seascape3.jpeg" alt="Seascape work">
+        <img src="images/portrait/portrait3.jpeg" alt="Portrait work">
+        <img src="images/seascape/seascape4.jpeg" alt="Seascape work">
+      </div>
+      <div style="text-align: center; margin-top: 30px;">
+        <a href="pages/portfolio.html" class="btn">View Full Portfolio</a>
+      </div>
+
+      <h2>Upcoming Workshops</h2>
+      <div class="workshop-cards">
+        <div class="workshop-card">
+          <img src="images/portrait/studio.jpeg" alt="Portrait Workshop">
+          <div class="workshop-card-content">
+            <h3>Portrait Drawing & Painting</h3>
+            <p class="date">February 15 & 22, 2026</p>
+            <p>A two-day intensive exploring how to see the face as shapes, capture likeness through proportion and value, and translate those foundations into a painted portrait.</p>
+            <p class="price">$200</p>
+            <a href="pages/workshops.html#portrait" class="btn">Learn More</a>
+          </div>
+        </div>
+        <div class="workshop-card">
+          <img src="images/seascape/studio.jpeg" alt="Seascape Workshop">
+          <div class="workshop-card-content">
+            <h3>Seascape Painting</h3>
+            <p class="date">Saturday, March 7, 2026</p>
+            <p>A one-day workshop exploring how master painters have captured the sea, then applying those techniques to bring out the vibrancy of St. Thomas seascapes.</p>
+            <p class="price">$75</p>
+            <a href="pages/workshops.html#seascape" class="btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Max Kovalsky. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="pages/contact.html">Contact</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
 </body>
 </html>

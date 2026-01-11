@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lectures - Max Kovalsky Art</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .lecture-card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      padding: 30px;
+      margin: 25px 0;
+    }
+    .lecture-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+    .lecture-header h3 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    .lecture-header .price {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #222;
+    }
+    .lecture-date {
+      color: #666;
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+    .lecture-description {
+      margin-bottom: 20px;
+    }
+    .lecture-topics {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+    .lecture-topics h4 {
+      margin: 0 0 10px;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .lecture-topics ul {
+      margin-left: 20px;
+      color: #555;
+    }
+    .lecture-topics li {
+      margin: 6px 0;
+    }
+    .lecture-meta {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+      padding: 15px 0;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      color: #666;
+      font-size: 0.95rem;
+    }
+    .lecture-meta span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .book-btn-container {
+      text-align: center;
+      margin-top: 25px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">Max Kovalsky</a>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="lectures.html" class="active">Lectures</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container-narrow">
+      <h1>Lectures</h1>
+      <p class="subtitle">Art history and technique discussions</p>
+
+      <p>Join me for in-depth explorations of art history, technique, and the creative process. Each lecture combines visual presentations with discussion, offering insights into how master artists approached their craft and how we can apply those lessons today.</p>
+
+      <h2>Upcoming Lectures</h2>
+
+      <div class="lecture-card">
+        <div class="lecture-header">
+          <h3>The Seascape Through the Ages</h3>
+          <span class="price">$25</span>
+        </div>
+        <p class="lecture-date">Thursday, February 27, 2026 - 6:00 PM</p>
+
+        <p class="lecture-description">From the dramatic seas of the Dutch Golden Age to the luminous waters of the Impressionists, this lecture traces how artists have captured the ocean's ever-changing nature. We'll examine techniques for depicting water movement, light on waves, and atmospheric perspective - skills directly applicable to your own seascape paintings.</p>
+
+        <div class="lecture-topics">
+          <h4>Topics Covered</h4>
+          <ul>
+            <li>Dutch marine painting and the birth of seascape as a genre</li>
+            <li>Turner's revolutionary approach to light and atmosphere</li>
+            <li>Winslow Homer and the American seascape tradition</li>
+            <li>Impressionist techniques for capturing fleeting water effects</li>
+            <li>Contemporary approaches and what we can learn from them</li>
+          </ul>
+        </div>
+
+        <div class="lecture-meta">
+          <span>Duration: 90 minutes</span>
+          <span>Location: Studio Gallery, St. Thomas</span>
+          <span>Includes: Refreshments</span>
+        </div>
+
+        <div class="book-btn-container">
+          <!-- Calendly/Stripe embed will go here -->
+          <a href="#" class="btn btn-primary">Reserve Seat - $25</a>
+        </div>
+      </div>
+
+      <div class="lecture-card">
+        <div class="lecture-header">
+          <h3>Seeing Like an Artist: The Science of Observation</h3>
+          <span class="price">$25</span>
+        </div>
+        <p class="lecture-date">Thursday, March 20, 2026 - 6:00 PM</p>
+
+        <p class="lecture-description">Why do our brains lie to us when we try to draw? This lecture explores the neuroscience behind artistic seeing - why beginners draw symbols instead of what they see, and how trained artists learn to bypass these cognitive shortcuts. Understanding these principles will transform how you approach any subject.</p>
+
+        <div class="lecture-topics">
+          <h4>Topics Covered</h4>
+          <ul>
+            <li>How the brain processes visual information</li>
+            <li>Symbol systems vs. perceptual drawing</li>
+            <li>Techniques masters use to "see" accurately</li>
+            <li>Practical exercises to train your eye</li>
+            <li>Why measuring and comparing beats memory</li>
+          </ul>
+        </div>
+
+        <div class="lecture-meta">
+          <span>Duration: 90 minutes</span>
+          <span>Location: Studio Gallery, St. Thomas</span>
+          <span>Includes: Refreshments</span>
+        </div>
+
+        <div class="book-btn-container">
+          <!-- Calendly/Stripe embed will go here -->
+          <a href="#" class="btn btn-primary">Reserve Seat - $25</a>
+        </div>
+      </div>
+
+      <h2>Private Lectures & Group Events</h2>
+      <div class="info-box">
+        <p>Looking for a private lecture for your group, club, or corporate event? I offer customized presentations on a variety of art-related topics. Lectures can be tailored to your group's interests and held at your location or my studio.</p>
+        <p style="margin-bottom: 0;"><a href="contact.html" class="btn" style="margin-top: 15px;">Inquire About Private Lectures</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Max Kovalsky. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="contact.html">Contact</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

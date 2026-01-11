@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Max Kovalsky Art</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">Max Kovalsky</a>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="lectures.html">Lectures</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container-narrow">
+      <h1>Portfolio</h1>
+      <p class="subtitle">Selected works in oil and charcoal</p>
+
+      <h2>Portraits</h2>
+      <div class="gallery-grid gallery-grid-2">
+        <img src="../images/portrait/portrait1.jpeg" alt="Portrait 1">
+        <img src="../images/portrait/portrait2.jpeg" alt="Portrait 2">
+        <img src="../images/portrait/portrait3.jpeg" alt="Portrait 3">
+        <img src="../images/portrait/portrait4.jpeg" alt="Portrait 4">
+      </div>
+
+      <h2>Seascapes</h2>
+      <div class="gallery-grid gallery-grid-2">
+        <div class="gallery-item-contain">
+          <img src="../images/seascape/seasccape1.jpeg" alt="Seascape 1" style="object-fit: contain; background: #fff;">
+        </div>
+        <img src="../images/seascape/seascape2.jpeg" alt="Seascape 2">
+        <div class="gallery-item-contain">
+          <img src="../images/seascape/seascape3.jpeg" alt="Seascape 3" style="object-fit: contain; background: #fff;">
+        </div>
+        <img src="../images/seascape/seascape4.jpeg" alt="Seascape 4">
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Max Kovalsky. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="contact.html">Contact</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
