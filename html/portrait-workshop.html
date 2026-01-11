@@ -75,28 +75,6 @@
       font-size: 1.05rem;
       margin: 20px 0;
     }
-    .schedule {
-      background: #f9f9f9;
-      padding: 25px;
-      border-radius: 6px;
-      margin: 25px 0;
-    }
-    .schedule-item {
-      display: flex;
-      justify-content: space-between;
-      padding: 12px 0;
-      border-bottom: 1px solid #eee;
-    }
-    .schedule-item:last-child {
-      border-bottom: none;
-    }
-    .schedule-date {
-      font-weight: bold;
-      color: #222;
-    }
-    .schedule-time {
-      color: #666;
-    }
     .day-schedule {
       background: #fafafa;
       padding: 20px;
@@ -108,23 +86,29 @@
       color: #333;
       border-bottom: 1px solid #eee;
       padding-bottom: 8px;
+      font-size: 1.2rem;
     }
     .time-block {
-      display: flex;
-      padding: 8px 0;
+      padding: 12px 0;
       border-bottom: 1px solid #f0f0f0;
     }
     .time-block:last-child {
       border-bottom: none;
     }
     .time {
-      width: 120px;
       font-weight: bold;
       color: #555;
-      flex-shrink: 0;
+      display: block;
+      margin-bottom: 4px;
     }
-    .activity {
-      flex: 1;
+    .activity-title {
+      font-weight: bold;
+      color: #333;
+    }
+    .activity-desc {
+      color: #666;
+      font-size: 0.95rem;
+      margin-top: 4px;
     }
     .logistics {
       background: #fff8f0;
@@ -143,6 +127,17 @@
     }
     .logistics li {
       margin: 8px 0;
+    }
+    .materials {
+      background: #f5f5f5;
+      padding: 25px;
+      border-radius: 6px;
+      margin: 25px 0;
+    }
+    .materials h3 {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      color: #333;
     }
     .price {
       font-size: 1.3rem;
@@ -177,17 +172,19 @@
 </head>
 <body>
   <div class="workshop-container">
-    <h1>Portrait Painting Workshop</h1>
+    <h1>Portrait Drawing & Painting Workshop</h1>
     <p class="subtitle">February 15 & 22, 2026</p>
 
     <img src="https://max6012.github.io/art_workshops/images/portrait/studio.jpeg" alt="Workshop studio" class="studio-img">
 
     <p class="description">
-      Join us for a two-day portrait painting workshop held over two consecutive Sundays.
-      We will explore the application of color theory to skin tones, practice capturing
-      likeness with form relationships and values, and finish with a color oil sketch.
-      Day one will focus on theory and drawing, and day two on color. We will be drawing
-      and painting from life. All levels are welcome!
+      We are looking forward to drawing and painting with you in our upcoming two-day portrait workshop! We'll explore how to see the face as shapes rather than features, how to capture likeness through proportion and value, and how to translate those foundations into a painted portrait.
+    </p>
+    <p class="description">
+      Our focus will be on learning, not perfection — think of your drawings and paintings as experiments, not masterpieces.
+    </p>
+    <p class="description">
+      We'll start each day with demos and exercises to loosen up, then move into longer sessions where you'll apply what you've learned. By the end, you'll have a better understanding of how to see, measure, and render the human face like an artist.
     </p>
 
     <h2>Example Works</h2>
@@ -201,71 +198,132 @@
     <h2>Workshop Schedule</h2>
 
     <div class="day-schedule">
-      <h3>Day 1 — Sunday, February 15</h3>
-      <p style="margin-bottom: 15px; color: #666;"><em>Focus: Theory & Drawing</em></p>
+      <h3>Day 1: Foundations in Pencil & Charcoal — Sunday, February 15</h3>
+
       <div class="time-block">
         <span class="time">9:00 – 9:30</span>
-        <span class="activity">Welcome & Setup — Introduction to materials and workshop philosophy</span>
+        <span class="activity-title">Welcome & Setup</span>
+        <p class="activity-desc">Intro to materials, safety, and workshop philosophy: process over product, "disposable drawings," experimentation.</p>
       </div>
+
       <div class="time-block">
-        <span class="time">9:30 – 10:30</span>
-        <span class="activity">Anatomy of the Head — Proportions, planes, and landmarks of the face</span>
+        <span class="time">9:30 – 9:45</span>
+        <span class="activity-title">Seeing Shapes, Not Features</span>
+        <p class="activity-desc">Quick discussion of why our brains lie to us about faces — how we see "eyes" and "noses" instead of shapes, angles, and values.</p>
       </div>
+
       <div class="time-block">
-        <span class="time">10:30 – 12:00</span>
-        <span class="activity">Drawing from Life — Gesture and construction drawings from live model</span>
+        <span class="time">9:45 – 10:30</span>
+        <span class="activity-title">Pencil Warm-Ups</span>
+        <p class="activity-desc">Gesture drawings of the head — 2-minute sketches focusing on overall shape and tilt, not features. We're training our eyes, not making keepers.</p>
       </div>
+
+      <div class="time-block">
+        <span class="time">10:30 – 11:00</span>
+        <span class="activity-title">Demo: Proportion & Measurement</span>
+        <p class="activity-desc">Instructor demo covering comparative measurement, the classic proportion guidelines (and when to ignore them), mapping big shapes.</p>
+      </div>
+
+      <div class="time-block">
+        <span class="time">11:00 – 12:00</span>
+        <span class="activity-title">Pencil Studies</span>
+        <p class="activity-desc">Students complete 3–4 pencil studies (10–15 minutes each) focusing on head shape, placement of features as shapes, and proportion.</p>
+      </div>
+
       <div class="time-block">
         <span class="time">12:00 – 12:45</span>
-        <span class="activity">Lunch Break</span>
+        <span class="activity-title">Lunch</span>
       </div>
+
       <div class="time-block">
-        <span class="time">12:45 – 2:15</span>
-        <span class="activity">Value Studies — Capturing form through light and shadow</span>
+        <span class="time">12:45 – 1:15</span>
+        <span class="activity-title">Introduction to Charcoal</span>
+        <p class="activity-desc">Demo of vine vs. compressed charcoal, subtractive drawing, building value.</p>
       </div>
+
       <div class="time-block">
-        <span class="time">2:15 – 3:00</span>
-        <span class="activity">Group Review & Discussion</span>
+        <span class="time">1:15 – 2:30</span>
+        <span class="activity-title">Charcoal Studies</span>
+        <p class="activity-desc">Students complete 2–3 charcoal studies (15–20 minutes each) focusing on big value shapes and shadow patterns, resisting the urge to draw features too soon.</p>
+      </div>
+
+      <div class="time-block">
+        <span class="time">2:30 – 3:00</span>
+        <span class="activity-title">Group Review & Discussion</span>
+        <p class="activity-desc">Discussion of what worked: shape accuracy vs. feature rendering, value grouping, we're learning to see the abstraction underneath the face.</p>
       </div>
     </div>
 
     <div class="day-schedule">
-      <h3>Day 2 — Sunday, February 22</h3>
-      <p style="margin-bottom: 15px; color: #666;"><em>Focus: Color</em></p>
+      <h3>Day 2: From Charcoal to Color — Sunday, February 22</h3>
+
       <div class="time-block">
         <span class="time">9:00 – 9:30</span>
-        <span class="activity">Warm-up & Review</span>
+        <span class="activity-title">Warm-Up: Quick Charcoal Study</span>
+        <p class="activity-desc">One charcoal portrait to loosen up and reinforce yesterday's lessons. Focus on value structure — this becomes your roadmap for painting.</p>
       </div>
+
       <div class="time-block">
-        <span class="time">9:30 – 10:30</span>
-        <span class="activity">Color Theory for Skin Tones — Warm/cool relationships, color temperature in flesh</span>
+        <span class="time">9:30 – 9:45</span>
+        <span class="activity-title">From Drawing to Painting</span>
+        <p class="activity-desc">Brief discussion of how drawing skills translate to paint: value structure first, color second.</p>
       </div>
+
       <div class="time-block">
-        <span class="time">10:30 – 12:00</span>
-        <span class="activity">Mixing Practice — Creating a skin tone palette from limited colors</span>
+        <span class="time">9:45 – 10:00</span>
+        <span class="activity-title">Demo: Monochromatic Block-In</span>
+        <p class="activity-desc">Instructor demo of blocking in values with a single color — establishing the structure before introducing full color.</p>
       </div>
+
+      <div class="time-block">
+        <span class="time">10:00 – 11:00</span>
+        <span class="activity-title">Monochromatic Block-In Studies</span>
+        <p class="activity-desc">Students complete 1–2 value block-in studies, focusing on getting the drawing right in paint.</p>
+      </div>
+
+      <div class="time-block">
+        <span class="time">11:00 – 11:15</span>
+        <span class="activity-title">Demo: Adding Color</span>
+        <p class="activity-desc">Instructor demo of transitioning from value block-in to color — mixing flesh tones, maintaining value relationships.</p>
+      </div>
+
+      <div class="time-block">
+        <span class="time">11:15 – 12:00</span>
+        <span class="activity-title">Color Studies</span>
+        <p class="activity-desc">Students add color to their block-ins or start fresh, focusing on matching values while introducing warm/cool temperature shifts.</p>
+      </div>
+
       <div class="time-block">
         <span class="time">12:00 – 12:45</span>
-        <span class="activity">Lunch Break</span>
+        <span class="activity-title">Lunch</span>
       </div>
+
       <div class="time-block">
         <span class="time">12:45 – 2:30</span>
-        <span class="activity">Color Oil Sketch — Painting from life, applying color theory to portrait</span>
+        <span class="activity-title">The "Good Enough" Portrait</span>
+        <p class="activity-desc">Students develop one portrait painting from value block-in through color to "good enough," emphasizing not overworking it — knowing when to stop.</p>
       </div>
+
       <div class="time-block">
         <span class="time">2:30 – 3:00</span>
-        <span class="activity">Group Reflection & Critique</span>
+        <span class="activity-title">Group Reflection</span>
+        <p class="activity-desc">Group discussion and reflection on the weekend's progression from shapes to values to color.</p>
       </div>
+    </div>
+
+    <div class="materials">
+      <h3>Materials Provided</h3>
+      <p>Newsprint, drawing paper, graphite pencils, vine and compressed charcoal, kneaded erasers, canvas paper, limited palette oils, brushes, solvent, rags.</p>
     </div>
 
     <div class="logistics">
       <h3>What to Bring</h3>
       <ul>
         <li>Your own lunch and plenty of water</li>
-        <li>An apron or clothes you don't mind getting paint on</li>
+        <li>An apron or clothes you don't mind getting dirty</li>
         <li>A roll of paper towels</li>
+        <li>A portrait reference photo — ideally a printed image with clear lighting, but you can also use one on your iPhone or iPad</li>
       </ul>
-      <p class="included" style="margin-top: 15px;">Drawing and painting supplies and live model included.</p>
     </div>
 
     <p class="price">Workshop Cost: <span>$200</span> for both days</p>
