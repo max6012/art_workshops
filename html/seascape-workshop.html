@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Georgia', serif;
+      line-height: 1.7;
+      color: #333;
+      background: #fff;
+      padding: 20px;
+    }
+    .workshop-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: #222;
+    }
+    h2 {
+      font-size: 1.4rem;
+      font-weight: normal;
+      color: #555;
+      margin: 30px 0 15px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      color: #666;
+      margin-bottom: 30px;
+      font-style: italic;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin: 25px 0;
+    }
+    .gallery img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 4px;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.02);
+    }
+    .studio-img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+    .description {
+      font-size: 1.05rem;
+      margin: 20px 0;
+    }
+    .schedule {
+      background: #f0f7ff;
+      padding: 25px;
+      border-radius: 6px;
+      margin: 25px 0;
+    }
+    .schedule-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid #dde8f3;
+    }
+    .schedule-item:last-child {
+      border-bottom: none;
+    }
+    .schedule-date {
+      font-weight: bold;
+      color: #222;
+    }
+    .schedule-time {
+      color: #666;
+    }
+    .logistics {
+      background: #f0f8ff;
+      padding: 25px;
+      border-radius: 6px;
+      border-left: 4px solid #6b9ac4;
+      margin: 25px 0;
+    }
+    .logistics h3 {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    .logistics ul {
+      margin-left: 20px;
+    }
+    .logistics li {
+      margin: 8px 0;
+    }
+    .price {
+      font-size: 1.3rem;
+      color: #222;
+      margin: 20px 0;
+    }
+    .price span {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .cta-button {
+      display: inline-block;
+      background: #333;
+      color: #fff;
+      padding: 15px 40px;
+      text-decoration: none;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="workshop-container">
+    <h1>Seascape Painting Workshop</h1>
+    <p class="subtitle">Capture the magic of light on water</p>
+
+    <img src="https://max6012.github.io/art_workshops/images/seascape/studio.jpeg" alt="Workshop studio" class="studio-img">
+
+    <p class="description">
+      Immerse yourself in the beauty of coastal scenes in this hands-on workshop.
+      Learn to paint luminous skies, reflective water, and atmospheric effects
+      that bring seascapes to life. Whether you prefer serene sunsets or dynamic
+      wave action, you'll develop the skills to capture these moments on canvas.
+    </p>
+
+    <h2>Example Works</h2>
+    <div class="gallery">
+      <img src="https://max6012.github.io/art_workshops/images/seascape/seasccape1.jpeg" alt="Seascape example 1">
+      <img src="https://max6012.github.io/art_workshops/images/seascape/seascape2.jpeg" alt="Seascape example 2">
+      <img src="https://max6012.github.io/art_workshops/images/seascape/seascape3.jpeg" alt="Seascape example 3">
+      <img src="https://max6012.github.io/art_workshops/images/seascape/seascape4.jpeg" alt="Seascape example 4">
+    </div>
+
+    <h2>Workshop Schedule</h2>
+    <div class="schedule">
+      <div class="schedule-item">
+        <span class="schedule-date">Saturday, February 22, 2026</span>
+        <span class="schedule-time">10:00 AM - 4:00 PM</span>
+      </div>
+      <div class="schedule-item">
+        <span class="schedule-date">Saturday, March 15, 2026</span>
+        <span class="schedule-time">10:00 AM - 4:00 PM</span>
+      </div>
+      <div class="schedule-item">
+        <span class="schedule-date">Saturday, April 19, 2026</span>
+        <span class="schedule-time">10:00 AM - 4:00 PM</span>
+      </div>
+    </div>
+
+    <h2>What You'll Learn</h2>
+    <p class="description">
+      Master the techniques of painting water reflections, dramatic skies, and
+      coastal atmospherics. We'll explore color theory for ocean scenes, learn to
+      suggest movement in waves, and practice creating depth through aerial
+      perspective. Each session includes live demonstrations and personalized feedback.
+    </p>
+
+    <div class="logistics">
+      <h3>What to Bring</h3>
+      <ul>
+        <li>Oil paints (suggested palette: titanium white, cadmium yellow light, cadmium orange, cadmium red, alizarin crimson, ultramarine blue, cerulean blue, viridian)</li>
+        <li>Brushes: variety of filberts and flats, sizes 2-12, plus a large brush for skies</li>
+        <li>Canvas or canvas panels (12x16" or 16x20" recommended for landscapes)</li>
+        <li>Palette, palette knife, and odorless mineral spirits</li>
+        <li>Reference photos (optional - references will be provided)</li>
+        <li>Apron or old clothes</li>
+        <li>Lunch (coffee and snacks provided)</li>
+      </ul>
+    </div>
+
+    <p class="price">Investment: <span>$185</span> per session</p>
+    <p class="description">Class size limited to 12 students for personalized instruction.</p>
+
+    <a href="#contact" class="cta-button">Reserve Your Spot</a>
+  </div>
+</body>
+</html>
