@@ -36,6 +36,12 @@
       border-bottom: 1px solid #ddd;
       padding-bottom: 8px;
     }
+    h3 {
+      font-size: 1.1rem;
+      font-weight: normal;
+      color: #444;
+      margin: 20px 0 10px;
+    }
     .subtitle {
       font-size: 1.1rem;
       color: #666;
@@ -91,6 +97,35 @@
     .schedule-time {
       color: #666;
     }
+    .day-schedule {
+      background: #fafafa;
+      padding: 20px;
+      border-radius: 6px;
+      margin: 15px 0;
+    }
+    .day-schedule h3 {
+      margin-top: 0;
+      color: #333;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 8px;
+    }
+    .time-block {
+      display: flex;
+      padding: 8px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .time-block:last-child {
+      border-bottom: none;
+    }
+    .time {
+      width: 120px;
+      font-weight: bold;
+      color: #555;
+      flex-shrink: 0;
+    }
+    .activity {
+      flex: 1;
+    }
     .logistics {
       background: #fff8f0;
       padding: 25px;
@@ -118,6 +153,10 @@
       font-size: 2rem;
       font-weight: bold;
     }
+    .included {
+      color: #666;
+      font-style: italic;
+    }
     .cta-button {
       display: inline-block;
       background: #333;
@@ -139,18 +178,19 @@
 <body>
   <div class="workshop-container">
     <h1>Portrait Painting Workshop</h1>
-    <p class="subtitle">Master the art of capturing the human form in oil</p>
+    <p class="subtitle">February 15 & 22, 2026</p>
 
     <img src="https://max6012.github.io/art_workshops/images/portrait/studio.jpeg" alt="Workshop studio" class="studio-img">
 
     <p class="description">
-      Join me for an immersive portrait painting experience in my bright, welcoming studio.
-      This workshop is designed for painters of all levels who want to deepen their understanding
-      of portraiture, from capturing accurate proportions to conveying emotion through brushwork
-      and color temperature.
+      Join us for a two-day portrait painting workshop held over two consecutive Sundays.
+      We will explore the application of color theory to skin tones, practice capturing
+      likeness with form relationships and values, and finish with a color oil sketch.
+      Day one will focus on theory and drawing, and day two on color. We will be drawing
+      and painting from life. All levels are welcome!
     </p>
 
-    <h2>Student Work Examples</h2>
+    <h2>Example Works</h2>
     <div class="gallery">
       <img src="https://max6012.github.io/art_workshops/images/portrait/portrait1.jpeg" alt="Portrait example 1">
       <img src="https://max6012.github.io/art_workshops/images/portrait/portrait2.jpeg" alt="Portrait example 2">
@@ -159,43 +199,76 @@
     </div>
 
     <h2>Workshop Schedule</h2>
-    <div class="schedule">
-      <div class="schedule-item">
-        <span class="schedule-date">Saturday, February 15, 2026</span>
-        <span class="schedule-time">10:00 AM - 4:00 PM</span>
+
+    <div class="day-schedule">
+      <h3>Day 1 — Sunday, February 15</h3>
+      <p style="margin-bottom: 15px; color: #666;"><em>Focus: Theory & Drawing</em></p>
+      <div class="time-block">
+        <span class="time">9:00 – 9:30</span>
+        <span class="activity">Welcome & Setup — Introduction to materials and workshop philosophy</span>
       </div>
-      <div class="schedule-item">
-        <span class="schedule-date">Saturday, March 8, 2026</span>
-        <span class="schedule-time">10:00 AM - 4:00 PM</span>
+      <div class="time-block">
+        <span class="time">9:30 – 10:30</span>
+        <span class="activity">Anatomy of the Head — Proportions, planes, and landmarks of the face</span>
       </div>
-      <div class="schedule-item">
-        <span class="schedule-date">Saturday, April 12, 2026</span>
-        <span class="schedule-time">10:00 AM - 4:00 PM</span>
+      <div class="time-block">
+        <span class="time">10:30 – 12:00</span>
+        <span class="activity">Drawing from Life — Gesture and construction drawings from live model</span>
+      </div>
+      <div class="time-block">
+        <span class="time">12:00 – 12:45</span>
+        <span class="activity">Lunch Break</span>
+      </div>
+      <div class="time-block">
+        <span class="time">12:45 – 2:15</span>
+        <span class="activity">Value Studies — Capturing form through light and shadow</span>
+      </div>
+      <div class="time-block">
+        <span class="time">2:15 – 3:00</span>
+        <span class="activity">Group Review & Discussion</span>
       </div>
     </div>
 
-    <h2>What You'll Learn</h2>
-    <p class="description">
-      We'll cover essential techniques including color mixing for skin tones,
-      understanding facial structure, working with a live model, and developing
-      your personal approach to portraiture. Each session includes demonstrations,
-      individual guidance, and plenty of painting time.
-    </p>
+    <div class="day-schedule">
+      <h3>Day 2 — Sunday, February 22</h3>
+      <p style="margin-bottom: 15px; color: #666;"><em>Focus: Color</em></p>
+      <div class="time-block">
+        <span class="time">9:00 – 9:30</span>
+        <span class="activity">Warm-up & Review</span>
+      </div>
+      <div class="time-block">
+        <span class="time">9:30 – 10:30</span>
+        <span class="activity">Color Theory for Skin Tones — Warm/cool relationships, color temperature in flesh</span>
+      </div>
+      <div class="time-block">
+        <span class="time">10:30 – 12:00</span>
+        <span class="activity">Mixing Practice — Creating a skin tone palette from limited colors</span>
+      </div>
+      <div class="time-block">
+        <span class="time">12:00 – 12:45</span>
+        <span class="activity">Lunch Break</span>
+      </div>
+      <div class="time-block">
+        <span class="time">12:45 – 2:30</span>
+        <span class="activity">Color Oil Sketch — Painting from life, applying color theory to portrait</span>
+      </div>
+      <div class="time-block">
+        <span class="time">2:30 – 3:00</span>
+        <span class="activity">Group Reflection & Critique</span>
+      </div>
+    </div>
 
     <div class="logistics">
       <h3>What to Bring</h3>
       <ul>
-        <li>Oil paints (limited palette: titanium white, cadmium yellow, cadmium red, alizarin crimson, ultramarine blue, burnt umber)</li>
-        <li>Brushes: variety of filberts and flats, sizes 2-10</li>
-        <li>Canvas or canvas panels (11x14" or 12x16" recommended)</li>
-        <li>Palette, palette knife, and odorless mineral spirits</li>
-        <li>Apron or old clothes</li>
-        <li>Lunch (coffee and snacks provided)</li>
+        <li>Your own lunch and plenty of water</li>
+        <li>An apron or clothes you don't mind getting paint on</li>
+        <li>A roll of paper towels</li>
       </ul>
+      <p class="included" style="margin-top: 15px;">Drawing and painting supplies and live model included.</p>
     </div>
 
-    <p class="price">Investment: <span>$185</span> per session</p>
-    <p class="description">Class size limited to 12 students for personalized instruction.</p>
+    <p class="price">Workshop Cost: <span>$200</span> for both days</p>
 
     <a href="#contact" class="cta-button">Reserve Your Spot</a>
   </div>

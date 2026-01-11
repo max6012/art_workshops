@@ -36,6 +36,12 @@
       border-bottom: 1px solid #ddd;
       padding-bottom: 8px;
     }
+    h3 {
+      font-size: 1.1rem;
+      font-weight: normal;
+      color: #444;
+      margin: 20px 0 10px;
+    }
     .subtitle {
       font-size: 1.1rem;
       color: #666;
@@ -69,27 +75,34 @@
       font-size: 1.05rem;
       margin: 20px 0;
     }
-    .schedule {
+    .day-schedule {
       background: #f0f7ff;
-      padding: 25px;
+      padding: 20px;
       border-radius: 6px;
-      margin: 25px 0;
+      margin: 15px 0;
     }
-    .schedule-item {
-      display: flex;
-      justify-content: space-between;
-      padding: 12px 0;
+    .day-schedule h3 {
+      margin-top: 0;
+      color: #333;
       border-bottom: 1px solid #dde8f3;
+      padding-bottom: 8px;
     }
-    .schedule-item:last-child {
+    .time-block {
+      display: flex;
+      padding: 8px 0;
+      border-bottom: 1px solid #e5eef7;
+    }
+    .time-block:last-child {
       border-bottom: none;
     }
-    .schedule-date {
+    .time {
+      width: 120px;
       font-weight: bold;
-      color: #222;
+      color: #555;
+      flex-shrink: 0;
     }
-    .schedule-time {
-      color: #666;
+    .activity {
+      flex: 1;
     }
     .logistics {
       background: #f0f8ff;
@@ -118,6 +131,10 @@
       font-size: 2rem;
       font-weight: bold;
     }
+    .included {
+      color: #666;
+      font-style: italic;
+    }
     .cta-button {
       display: inline-block;
       background: #333;
@@ -139,15 +156,13 @@
 <body>
   <div class="workshop-container">
     <h1>Seascape Painting Workshop</h1>
-    <p class="subtitle">Capture the magic of light on water</p>
+    <p class="subtitle">Saturday, March 7, 2026</p>
 
     <img src="https://max6012.github.io/art_workshops/images/seascape/studio.jpeg" alt="Workshop studio" class="studio-img">
 
     <p class="description">
-      Immerse yourself in the beauty of coastal scenes in this hands-on workshop.
-      Learn to paint luminous skies, reflective water, and atmospheric effects
-      that bring seascapes to life. Whether you prefer serene sunsets or dynamic
-      wave action, you'll develop the skills to capture these moments on canvas.
+      During this one-day painting workshop you will learn techniques that will bring out
+      the vibrancy of St Thomas seascapes in your paintings. All levels are welcome!
     </p>
 
     <h2>Example Works</h2>
@@ -159,44 +174,47 @@
     </div>
 
     <h2>Workshop Schedule</h2>
-    <div class="schedule">
-      <div class="schedule-item">
-        <span class="schedule-date">Saturday, February 22, 2026</span>
-        <span class="schedule-time">10:00 AM - 4:00 PM</span>
+
+    <div class="day-schedule">
+      <h3>Saturday, March 7</h3>
+      <div class="time-block">
+        <span class="time">9:00 – 9:30</span>
+        <span class="activity">Welcome & Setup — Introduction to materials and seascape painting</span>
       </div>
-      <div class="schedule-item">
-        <span class="schedule-date">Saturday, March 15, 2026</span>
-        <span class="schedule-time">10:00 AM - 4:00 PM</span>
+      <div class="time-block">
+        <span class="time">9:30 – 10:30</span>
+        <span class="activity">Color & Light — Understanding Caribbean light, water reflections, and sky colors</span>
       </div>
-      <div class="schedule-item">
-        <span class="schedule-date">Saturday, April 19, 2026</span>
-        <span class="schedule-time">10:00 AM - 4:00 PM</span>
+      <div class="time-block">
+        <span class="time">10:30 – 12:00</span>
+        <span class="activity">Demo & Studies — Techniques for painting water, waves, and atmospheric effects</span>
+      </div>
+      <div class="time-block">
+        <span class="time">12:00 – 12:45</span>
+        <span class="activity">Lunch Break</span>
+      </div>
+      <div class="time-block">
+        <span class="time">12:45 – 2:30</span>
+        <span class="activity">Painting Session — Create your own St Thomas seascape</span>
+      </div>
+      <div class="time-block">
+        <span class="time">2:30 – 3:00</span>
+        <span class="activity">Group Reflection & Critique</span>
       </div>
     </div>
-
-    <h2>What You'll Learn</h2>
-    <p class="description">
-      Master the techniques of painting water reflections, dramatic skies, and
-      coastal atmospherics. We'll explore color theory for ocean scenes, learn to
-      suggest movement in waves, and practice creating depth through aerial
-      perspective. Each session includes live demonstrations and personalized feedback.
-    </p>
 
     <div class="logistics">
       <h3>What to Bring</h3>
       <ul>
-        <li>Oil paints (suggested palette: titanium white, cadmium yellow light, cadmium orange, cadmium red, alizarin crimson, ultramarine blue, cerulean blue, viridian)</li>
-        <li>Brushes: variety of filberts and flats, sizes 2-12, plus a large brush for skies</li>
-        <li>Canvas or canvas panels (12x16" or 16x20" recommended for landscapes)</li>
-        <li>Palette, palette knife, and odorless mineral spirits</li>
-        <li>Reference photos (optional - references will be provided)</li>
-        <li>Apron or old clothes</li>
-        <li>Lunch (coffee and snacks provided)</li>
+        <li>Your own lunch and plenty of water</li>
+        <li>An apron or clothes you don't mind getting paint on</li>
+        <li>A roll of paper towels</li>
+        <li>Feel free to bring your favorite brushes and paints (optional)</li>
       </ul>
+      <p class="included" style="margin-top: 15px;">All supplies will be provided.</p>
     </div>
 
-    <p class="price">Investment: <span>$185</span> per session</p>
-    <p class="description">Class size limited to 12 students for personalized instruction.</p>
+    <p class="price">Workshop Cost: <span>$75</span></p>
 
     <a href="#contact" class="cta-button">Reserve Your Spot</a>
   </div>
